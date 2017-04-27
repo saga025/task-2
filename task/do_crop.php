@@ -66,8 +66,8 @@ if(isset($_POST['crop_image']))
   $i=$row[0];
   $image = $row[1];
   list( $width,$height ) = getimagesize( $image );
-  $newwidth = 600;
-  $newheight = 400;
+  $newwidth = 500;
+  $newheight = 200;
 
   $thumb = imagecreatetruecolor( $newwidth, $newheight );
   $source = imagecreatefromjpeg($image);
